@@ -1,1 +1,29 @@
-Hello World- this is samiksha! 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Code</title>
+</head>
+<body>
+    <div>
+        <h1>Hi, please enter the code</h1>
+        <input type="text" id="codeInput">
+        <button onclick="checkCode()">Submit</button>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        function checkCode() {
+            var userInput = document.getElementById('codeInput').value;
+            var secretCode = String.fromCharCode(56, 49, 56, 57);
+            if (userInput === secretCode) {
+                var message = "Hi Monty Ponty !! Dhabdya Shonti! Zop lavkar! (You looked so hot in light pink t-shirt when in college! I miss that daddy!) jk gubnite!";
+                document.getElementById('message').innerText = message;
+            } else {
+                document.getElementById('message').innerText = "Try again!";
+            }
+        }
+    </script>
+</body>
+</html>
