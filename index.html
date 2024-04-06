@@ -7,23 +7,7 @@
 </head>
 <body>
     <div>
-        <h1>Hi, please enter the code</h1>
-        <input type="text" id="codeInput">
-        <button onclick="checkCode()">Submit</button>
-        <p id="message"></p>
+        <h1>Hi, Samiksha thsi side.</h1>
     </div>
-
-    <script>
-        function checkCode() {
-            var userInput = document.getElementById('codeInput').value;
-            var secretCode = String.fromCharCode(56, 49, 56, 57);
-            if (userInput === secretCode) {
-                var message = "Hi Monty Ponty !! Dhabdya Shonti! Zop lavkar! (You looked so hot in light pink t-shirt when in college! I miss that daddy!) jk gubnite!";
-                document.getElementById('message').innerText = message;
-            } else {
-                document.getElementById('message').innerText = "Try again!";
-            }
-        }
-    </script>
 </body>
 </html>
